@@ -1,0 +1,37 @@
+<!--
+@license
+Copyright (c) 2015 The expand.js authors. All rights reserved.
+This code may only be used under the BSD style license found at https://expandjs.github.io/LICENSE.txt
+The complete set of authors may be found at https://expandjs.github.io/AUTHORS.txt
+The complete set of contributors may be found at https://expandjs.github.io/CONTRIBUTORS.txt
+-->
+
+<!--
+This mixin is used to add localization capabilities to an element.
+
+@mixin xp-i18n
+@description This mixin is used to add localization capabilities to an element.
+
+@dependency polymer Polymer/polymer#^0.5
+@dependency expandjs ExpandJS/expandjs
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../expandjs/expandjs.html">
+
+<script>
+    XPMixin('xp-i18n', {
+
+        /**
+         * Wraps `XP.localize`.
+         *
+         * @method localize
+         * @param {Array | Object | string} [string = '']
+         * @param {Object} [locale]
+         * @returns {Array | Object | string}
+         */
+        localize: function (string, locale) {
+            return XP.localize(string, locale);
+        }
+    });
+</script>
