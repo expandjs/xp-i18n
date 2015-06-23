@@ -1,3 +1,3 @@
 # xp-i18n
 
-See the [`documentation page`](http://expandjs.com/elements/xp-i18n) for more information.
+This repository **is deprected**. Use [`xp-i18n-behavior`](https://github.com/expandjs/xp-i18n-behavior) instead.
